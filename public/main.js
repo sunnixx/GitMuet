@@ -2,7 +2,6 @@ var DATA = [];
 var userName = prompt("Enter Your Username");
 
 loadData();
-renderHTML();
 
 $('#btnSubmit').on('click',function(){
   var input = $('#input').val();
@@ -41,3 +40,7 @@ function loadData(){
     },2000)
   })
 }
+
+setInterval(function(){
+  renderHTML();
+},3000)
